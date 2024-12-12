@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script defer src="script.js"></script>
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+
+  <div class="hidden-menu" id="hiddenMenu">
+    <button class="delete-hidden-menu" id="deleteHiddenMenu">
+      <hr class="left">
+      <hr>
+    </button>
+    <ul class="hidden-navigation-links">
+      <li><a href="">Collections</a></li>
+      <li><a href="">Men</a></li>
+      <li><a href="">Women</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </div>
+
+  <header>
+    <div class="menu">
+      <button class="hamburger" id="hamburger">
+        <hr>
+        <hr>
+        <hr>
+      </button>
+      <div class="logo">
+        <img src="images/logo.svg" alt="Sneakers">
+      </div>
+      <nav>
+        <ul class="navigation-links">
+          <li><a href="">Collections <hr></a></li>
+          <li><a href="">Men <hr></a></li>
+          <li><a href="">Women <hr></a></li>
+          <li><a href="">About<hr></a></li>
+          <li><a href="">Contact<hr></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="profile-info">
+      <div class="cart-open-button">
+        <button id="cartButton"><img src="images/icon-cart.svg" alt="open your cart"></button>
+        <span class="hidden" id="full-cart">1</span>
+      </div>
+      <div class="profile">
+        <button><img src="images/image-avatar.png" alt="open your profile"></button>
+      </div>
+    </div>
+  </header>
+  <div class="cart-block">
+    <div class="hidden cart" id="cart">
+      <div class="cart-head">
+        <h2>Cart</h2>
+        <button id="deleteCartButton"><hr class="left"><hr></button>
+      </div>
+      <hr>
+      <div class="empty-cart" id="emptyCart">
+        <h3>Your cart is empty</h3>
+      </div>
+      <div class="active-cart hidden" id="activeCart">
+        <div class="main-cart" id="mainCart">
+        </div>
+        <button id="checkOutButton">Checkout</button>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+
+  <main>
+    <div class="photo-block">
+      <div class="main-photo">
+        <button class="changePhotoButton" id="previosMainPictureButton"><img src="images/icon-previous.svg" alt="previous picture"></button>
+        <button id="mainPhotoButton"><img src="images/image-product-1.jpg" alt="light beige suede sneakers. Front view"></button>
+        <button class="changePhotoButton" id="nextMainPictureButton"><img src="images/icon-next.svg" alt="next picture"></button>
+      </div>
+      <div class="under-photos">
+        <button class="under-button active-img"><img src="images/image-product-1-thumbnail.jpg" alt="light beige suede sneakers. Front view"></button>
+        <button class="under-button"><img src="images/image-product-2-thumbnail.jpg" alt="light beige suede sneakers. Behind view"></button>
+        <button class="under-button"><img src="images/image-product-3-thumbnail.jpg" alt="light beige suede sneakers. Front-side view"></button>
+        <button class="under-button"><img src="images/image-product-4-thumbnail.jpg" alt="light beige suede sneakers. Side view"></button>
+      </div>
+    </div>
+    <div class="info-block">
+      <span class="company-name">Sneaker Company</span>
+      <h2 class="sneaker-name">Fall Limited Edition Sneakers</h2>
+      <p class="sneaker-info">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="price-block">
+        <div class="priceInfo">
+          <span class="price-now">$125.00</span>
+          <span class="past-price">$250.00</span>
+        </div>
+        <span class="sale-span">50%</span>
+      </div>
+      <div class="button-order-block">
+        <div class="count-block">
+          <button class="minus" id="minus"><img src="images/icon-minus.svg" alt="Minus"></button>
+          <span class="count" id="count">0</span>
+          <button class="plus" id="plus"><img src="images/icon-plus.svg" alt="Plus"></button>
+        </div>
+        <div class="add-button-block">
+          <button id="addButton"><img src="images/icon-cart.svg" alt="add your sneakers in your cart"> Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Dinixtus</a>.
+  </div>
+
+  <div class="hidden-block hidden" id="hiddenBlock">
+    <button class="delete-hidden-block" id="deleteHiddenBlock">
+      <hr class="left">
+      <hr>
+    </button>
+    <div class="main-hidden-content">
+      <button id="previosPictureButton"><img src="images/icon-previous.svg" alt="previous picture"></button>
+      <img class="hidden-photo" id="hiddenPhoto" src="images/image-product-1.jpg" alt="light beige suede sneakers. Front view">
+      <button id="nextPectureButton"><img src="images/icon-next.svg" alt="next picture"></button>
+    </div>
+    <div class="under-photos">
+      <button class="under-hidden-button"><img src="images/image-product-1-thumbnail.jpg" alt="light beige suede sneakers. Front view"></button>
+      <button class="under-hidden-button"><img src="images/image-product-2-thumbnail.jpg" alt="light beige suede sneakers. Behind view"></button>
+      <button class="under-hidden-button"><img src="images/image-product-3-thumbnail.jpg" alt="light beige suede sneakers. Front-side view"></button>
+      <button class="under-hidden-button"><img src="images/image-product-4-thumbnail.jpg" alt="light beige suede sneakers. Side view"></button>
+    </div>
+  </div>
+</body>
+</html>
